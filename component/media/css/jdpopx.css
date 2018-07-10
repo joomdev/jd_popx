@@ -409,7 +409,6 @@ label.error {
 .jd-popx-author-wrapper .jd-by {
     font-size: 18px;
     line-height: 20px;
-    background: url(../images/post-icon.png) no-repeat top 8px left;
     padding-left: 25px;
 }
 
@@ -1912,7 +1911,6 @@ label.error {
     .jd-popx.full-width.style2 .jd-popx-author-wrapper .jd-by {
         font-size: 14px;
         line-height: 20px;
-        background: url(../images/post-icon.png) no-repeat top 6px left;
         padding-left: 25px;
         margin: 0;
     }

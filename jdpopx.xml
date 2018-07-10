@@ -2,8 +2,8 @@
 <extension version="3.4" type="plugin" group="system" method="upgrade">
     <name>JD PopX</name>
 	<author>JoomDev</author>
-	<creationDate>Mar 2018</creationDate>
-	<version>1.0</version>
+	<creationDate>June 2018</creationDate>
+	<version>1.1</version>
 	<authorEmail>support@joomdev.com</authorEmail>
 	<authorUrl>http://www.joomdev.com</authorUrl>
 	<copyright>Copyright (C) 2008 - 2018 JoomDev.com. All rights reserved.</copyright>
