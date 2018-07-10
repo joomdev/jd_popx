@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system" method="upgrade">
+    <name>JD PopX</name>
+	<author>JoomDev</author>
+	<creationDate>Mar 2018</creationDate>
+	<version>1.0</version>
+	<authorEmail>support@joomdev.com</authorEmail>
+	<authorUrl>http://www.joomdev.com</authorUrl>
+	<copyright>Copyright (C) 2008 - 2018 JoomDev.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>JD PopX lets you create attractive options to collect email addresses for your AcyMailing Subscriptions.</description>
+	<updateservers>
+		<server type="extension" name="jdpopx" priority="1">https://cdn.joomdev.com/extensionupdates/jdpopx/jdpopx.xml</server>
+	</updateservers>
+    <scriptfile>installer.script.php</scriptfile>
+    <files>
+		  <filename plugin="com_jdpopx">installer.script.php</filename>
+    </files>
+    <plugins>
+        <plugin plugin="jdpopx" group="system" />
+    </plugins>
+</extension>

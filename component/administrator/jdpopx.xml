@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_jdpopx</name>
+    <author>JoomDev</author>
+    <creationDate>Mar 2018</creationDate>
+	<copyright>Copyright (C) 2008 - 2018 JoomDev.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomdev.com</authorEmail>
+    <authorUrl>https://www.joomdev.com/</authorUrl>
+    <version>1.0</version>
+    <description>COM_JDPOPX_XML_DESCRIPTION</description> 
+	<updateservers>
+		<server type="extension" name="jdpopx" priority="1">https://cdn.joomdev.com/extensionupdates/jdpopx/jdpopx.xml</server>
+	</updateservers>
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>
+        </sql>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall> 
+    <media destination="com_jdpopx" folder="media">
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>uploads</folder>
+    </media> 
+    <administration>
+        <menu>COM_JDPOPX</menu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>jdpopx.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>layouts</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator/languages">
+			<language tag="en-GB">en-GB/en-GB.com_jdpopx.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_jdpopx.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+        <plugin group="search" plugin="jdpopx"/>
+    </plugins>    
+</extension>

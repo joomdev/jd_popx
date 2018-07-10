@@ -1,0 +1,29 @@
+/**
+ * @package JDPopX
+ * @version - 1.0
+ * @author JoomDev https://www.joomdev.com/
+ * @copyright Copyright (C) 2008 - 2018 JoomDev.com. All rights reserved.
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+.option_type{list-style:none;float:left;width:100%;margin:0px!important;padding:0px!important;}
+.option_type li{width:23%;float:left;}
+.option_type li:not(:nth-child(1)){padding-left:10px;}
+.option_type_sub{list-style:none;float:left;width:100%;margin:0px!important;padding:0px!important;} 
+.option_type_sub li{width:47%;float:left;}
+.option_type_sub li:not(:nth-child(1)){padding-left:10px;}
+.option_type_sub li img{max-height:208px;}
+.full_sid_tmpl{margin-top:20px;float:left;}
+.check_label{margin-top:5px;}
+.option_template{display:none;}
+.subtmpl{display:none;}
+.subtmplactive{display:none;}
+.error{color:#9d261d;}
+#url{display:none;}
+form.jdpopxadmin input[type="radio"] {margin:2px 3px 3px 10px;}
+form.jdpopxadmin input[type="checkbox"] {margin:2px 10px 3px 10px;}
+.popximageadmin{max-width: 200px!important;max-height: 200px!important;}
+ul#bar_template li img{height:35px;}
+ul.option_type li.active img,
+ul.option_type_sub li.active img {border:2px solid #5bc0de;}
+ul.option_type li img,
+ul.option_type_sub li img {border: 2px solid white; padding:5px;}
