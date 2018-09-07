@@ -185,7 +185,16 @@ $data = $this->SettingData;
 					<div class="controls">						 
 						<input type="text" required="true" class="required" name="cookie_time" id="cookie_time" value="<?php echo (isset($data->cookie_time)) ? $data->cookie_time : ''; ?>" />
 					</div>
-				</div>	
+				</div>
+				<div class="control-group">
+					<hr>
+					<div class="center">
+						<p>JD PopX v1.3</p>
+						<p>Like this extension? <a href="https://extensions.joomla.org/extension/jd-popx/">Leave a review on JED <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></a></p>
+						<p><a href="https://www.joomdev.com/products/extensions">More Joomla Extensions</a> |<a href="https://www.joomdev.com/products/templates"> Free Joomla Templates</a> | <a href="https://www.joomdev.com/forum/jd-popx">Support</a></p>
+						<p>© 2018 - JoomDev. All Rights Reserved</p>
+					</div>
+				</div>
 				
 				</fieldset>
 			</div>

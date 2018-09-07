@@ -72,7 +72,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template1][heading]" id="jform_full_screen_heading" value="<?php echo (isset($this->full_screen->heading)) ? $this->full_screen->heading : JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_HEADING'); ?>" />
+				<input type="text" name="full_screen[template1][heading]" id="jform_full_screen_heading" value="<?php echo  JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_HEADING'); ?>" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -82,7 +82,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template1][description]" value="<?php echo (isset($this->full_screen->description)) ? $this->full_screen->description : JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_DESC'); ?>" />
+				<input type="text" name="full_screen[template1][description]" value="<?php echo JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_DESC'); ?>" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -92,7 +92,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template1][button_text]" id="jform_full_screen_button_text" value="<?php echo (isset($this->full_screen->button_text)) ? $this->full_screen->button_text : JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_BUTTON_TEXT'); ?>" />
+				<input type="text" name="full_screen[template1][button_text]" id="jform_full_screen_button_text" value="<?php echo  JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_BUTTON_TEXT'); ?>" />
 			</div>
 		</div>	
 		<div class="control-group">
