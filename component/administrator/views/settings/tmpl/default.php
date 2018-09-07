@@ -1,7 +1,6 @@
 <?php
 /**
  * @package JDPopX
- * @version - 1.0
  * @author JoomDev https://www.joomdev.com/
  * @copyright Copyright (C) 2008 - 2018 JoomDev.com. All rights reserved.
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
@@ -190,8 +189,8 @@ $data = $this->SettingData;
 					<hr>
 					<div class="center">
 						<p>JD PopX v1.3</p>
-						<p>Like this extension? <a href="https://extensions.joomla.org/extension/jd-popx/">Leave a review on JED <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></a></p>
-						<p><a href="https://www.joomdev.com/products/extensions">More Joomla Extensions</a> |<a href="https://www.joomdev.com/products/templates"> Free Joomla Templates</a> | <a href="https://www.joomdev.com/forum/jd-popx">Support</a></p>
+						<p>Like this extension? <a target="_blank" href="https://extensions.joomla.org/extension/jd-popx/">Leave a review on JED <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></a></p>
+						<p><a href="https://www.joomdev.com/products/extensions" target="_blank">More Joomla Extensions</a> |<a href="https://www.joomdev.com/products/templates" target="_blank"> Free Joomla Templates</a> | <a href="https://www.joomdev.com/forum/jd-popx" target="_blank">Support</a></p>
 						<p>© 2018 - JoomDev. All Rights Reserved</p>
 					</div>
 				</div>

@@ -1,2 +1,2 @@
-# JD-PopX
+# JD PopX
 JD PopX

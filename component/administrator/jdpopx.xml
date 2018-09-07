@@ -5,9 +5,9 @@
     <creationDate>Mar 2018</creationDate>
 	<copyright>Copyright (C) 2008 - 2018 JoomDev.com. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<authorEmail>support@joomdev.com</authorEmail>
+	<authorEmail>info@joomdev.com</authorEmail>
     <authorUrl>https://www.joomdev.com/</authorUrl>
-    <version>1.0</version>
+    <version>1.3</version>
     <description>COM_JDPOPX_XML_DESCRIPTION</description> 
 	<updateservers>
 		<server type="extension" name="jdpopx" priority="1">https://cdn.joomdev.com/extensionupdates/jdpopx/jdpopx.xml</server>

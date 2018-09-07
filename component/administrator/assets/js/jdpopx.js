@@ -1,6 +1,5 @@
 /**
  * @package JDPopX
- * @version - 1.0
  * @author JoomDev https://www.joomdev.com/
  * @copyright Copyright (C) 2008 - 2018 JoomDev.com. All rights reserved.
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later

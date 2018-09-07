@@ -1,6 +1,5 @@
 <?php
 /**
- * @version    CVS: 1.0.0
  * @package    Com_Jdpopx
  * @author     JoomDev
  * @copyright  Copyright (C) 2008 - 2018 JoomDev.com. All rights reserved.
