@@ -94,7 +94,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="small_sidebar[template1][heading]" id="jform_small_sidebar_heading" value="<?php echo (isset($this->small_sidebar->heading)) ? $this->small_sidebar->heading : JText::_('COM_JDPOPX_SIDE_BAR_FORM_CHANGE_HEADING_VALUE'); ?>" />
+				<input type="text" name="small_sidebar[template1][heading]" id="jform_small_sidebar_heading" value="<?php echo (isset($this->small_sidebar->heading)) ? $this->small_sidebar->heading : 'Subscribe'; ?>" />
 			</div>
 		</div>	 	
 		<div class="control-group">
@@ -104,7 +104,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="small_sidebar[template1][button_text]" id="jform_small_sidebar_button_text" value="<?php echo (isset($this->small_sidebar->button_text)) ? $this->small_sidebar->button_text : JText::_('COM_JDPOPX_SIDE_BAR_FORM_CHANGE_BUTTON_TEXT_VALUE'); ?>" />
+				<input type="text" name="small_sidebar[template1][button_text]" id="jform_small_sidebar_button_text" value="<?php echo (isset($this->small_sidebar->button_text)) ? $this->small_sidebar->button_text : 'Submit'; ?>" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -124,7 +124,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="small_sidebar[template1][bottom_line]" id="jform_small_sidebar_bottom_line" value="<?php echo (isset($this->small_sidebar->bottom_line)) ? $this->small_sidebar->bottom_line : JText::_('COM_JDPOPX_SIDE_BAR_FORM_CHANGE_BOTTON_LINE_VALUE'); ?>" />
+				<input type="text" name="small_sidebar[template1][bottom_line]" id="jform_small_sidebar_bottom_line" value="<?php echo (isset($this->small_sidebar->bottom_line)) ? $this->small_sidebar->bottom_line : 'We never spam your inbox'; ?>" />
 			</div>
 		</div>		
 	</div>
@@ -203,7 +203,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="small_sidebar[template2][heading]" value="<?php echo (isset($this->small_sidebar->heading2)) ? $this->small_sidebar->heading2 : JText::_('COM_JDPOPX_SIDE_BAR2_FORM_CHANGE_HEADING_VALUE'); ?>" id="jform_small_sidebar2_heading" />
+				<input type="text" name="small_sidebar[template2][heading]" value="<?php echo (isset($this->small_sidebar->heading2)) ? $this->small_sidebar->heading2 : 'Download'; ?>" id="jform_small_sidebar2_heading" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -213,7 +213,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="small_sidebar[template2][description]" value="<?php echo (isset($this->small_sidebar->description2)) ? $this->small_sidebar->description2 : JText::_('COM_JDPOPX_SIDE_BAR2_FORM_CHANGE_DESC'); ?>" id="jform_small_sidebar2_description" />
+				<input type="text" name="small_sidebar[template2][description]" value="<?php echo (isset($this->small_sidebar->description2)) ? $this->small_sidebar->description2 : 'Free Guide Now'; ?>" id="jform_small_sidebar2_description" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -223,7 +223,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="small_sidebar[template2][button_text]" value="<?php echo (isset($this->small_sidebar->button_text2)) ? $this->small_sidebar->button_text2 : JText::_('COM_JDPOPX_SIDE_BAR2_FORM_CHANGE_BUTTON_TEXT_VALUE'); ?>" id="jform_small_sidebar2_button_text" />
+				<input type="text" name="small_sidebar[template2][button_text]" value="<?php echo (isset($this->small_sidebar->button_text2)) ? $this->small_sidebar->button_text2 : 'Submit'; ?>" id="jform_small_sidebar2_button_text" />
 			</div>
 		</div>	 
 		<div class="control-group">
@@ -233,7 +233,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="small_sidebar[template2][button_color]" value="<?php echo (isset($this->small_sidebar->button_color2)) ? $this->small_sidebar->button_color2 : JText::_('COM_JDPOPX_SIDE_BAR2_FORM_CHANGE_BUTTON_COLOR_VALUE'); ?>" class="minicolors" />
+				<input type="text" name="small_sidebar[template2][button_color]" value="<?php echo (isset($this->small_sidebar->button_color2)) ? $this->small_sidebar->button_color2 : '#333333'; ?>" class="minicolors" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -243,7 +243,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="small_sidebar[template2][bottom_line]" value="<?php echo (isset($this->small_sidebar->bottom_line2)) ? $this->small_sidebar->bottom_line2 : JText::_('COM_JDPOPX_SIDE_BAR2_FORM_CHANGE_BOTTON_LINE_VALUE'); ?>" />
+				<input type="text" name="small_sidebar[template2][bottom_line]" value="<?php echo (isset($this->small_sidebar->bottom_line2)) ? $this->small_sidebar->bottom_line2 : 'We never spam your inbox'; ?>" />
 			</div>
 		</div>
 	</div> 

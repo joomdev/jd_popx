@@ -71,7 +71,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template1][heading]" id="jform_full_screen_heading" value="<?php echo  JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_HEADING'); ?>" />
+			<input type="text" name="full_screen[template1][heading]" id="jform_full_screen_heading" value="<?php echo (isset($this->full_screen->heading)) ? $this->full_screen->heading : 'Hold On'; ?>" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -81,7 +81,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template1][description]" value="<?php echo JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_DESC'); ?>" />
+			<input type="text" name="full_screen[template1][description]" value="<?php echo (isset($this->full_screen->description)) ? $this->full_screen->description : 'Get 10 % Discount Immediately'; ?>" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -91,7 +91,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template1][button_text]" id="jform_full_screen_button_text" value="<?php echo  JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_BUTTON_TEXT'); ?>" />
+			<input type="text" name="full_screen[template1][button_text]" id="jform_full_screen_button_text" value="<?php echo (isset($this->full_screen->button_text)) ? $this->full_screen->button_text : 'Submit'; ?>" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -111,7 +111,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template1][bottom_line]" id="jform_full_screen_bottom_line" value="<?php echo (isset($this->full_screen->bottom_line)) ? $this->full_screen->bottom_line : JText::_('COM_JDPOPX_FULL_SCREEN_FORM_CHANGE_BOTTON_LINE'); ?>" />
+				<input type="text" name="full_screen[template1][bottom_line]" id="jform_full_screen_bottom_line" value="<?php echo (isset($this->full_screen->bottom_line)) ? $this->full_screen->bottom_line : 'We never spam your inbox'; ?>" />
 			</div>
 		</div>		
 	</div>
@@ -162,7 +162,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template2][heading]" value="<?php echo (isset($this->full_screen->heading2)) ? $this->full_screen->heading2 : JText::_('COM_JDPOPX_FULL_SCREEN2_FORM_CHANGE_HEADING'); ?>" id="jform_full_screen2_heading" />
+				<input type="text" name="full_screen[template2][heading]" value="<?php echo (isset($this->full_screen->heading2)) ? $this->full_screen->heading2 : 'Download the free guide now' ?>" id="jform_full_screen2_heading" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -172,7 +172,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template2][description]" id="jform_full_screen2_description" value="<?php echo (isset($this->full_screen->description2)) ? $this->full_screen->description2 : JText::_('COM_JDPOPX_FULL_SCREEN2_FORM_CHANGE_DESC'); ?>" />
+				<input type="text" name="full_screen[template2][description]" id="jform_full_screen2_description" value="<?php echo (isset($this->full_screen->description2)) ? $this->full_screen->description2 : 'Various versions have evolved over the years, sometimes by accident, sometimes on purpose' ?>" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -182,7 +182,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template2][button_text]" id="jform_full_screen2_button_text" value="<?php echo (isset($this->full_screen->button_text2)) ? $this->full_screen->button_text2 : JText::_('COM_JDPOPX_FULL_SCREEN2_FORM_CHANGE_BUTTON_TEXT'); ?>" />
+				<input type="text" name="full_screen[template2][button_text]" id="jform_full_screen2_button_text" value="<?php echo (isset($this->full_screen->button_text2)) ? $this->full_screen->button_text2 : 'Submit'; ?>" />
 			</div>
 		</div>		 
 		<div class="control-group">
@@ -192,7 +192,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template2][button_color]" class="minicolors" value="<?php echo (isset($this->full_screen->button_color2)) ? $this->full_screen->button_color2 : JText::_('COM_JDPOPX_FULL_SCREEN2_FORM_CHANGE_BUTTON_COLOR'); ?>" />
+				<input type="text" name="full_screen[template2][button_color]" class="minicolors" value="<?php echo (isset($this->full_screen->button_color2)) ? $this->full_screen->button_color2 : '#30f3e7'; ?>" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -202,7 +202,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template2][bottom_line]" id="jform_full_screen2_bottom_line" value="<?php echo (isset($this->full_screen->bottom_line2)) ? $this->full_screen->bottom_line2 : JText::_('COM_JDPOPX_FULL_SCREEN2_FORM_CHANGE_BOTTON_LINE'); ?>" />
+				<input type="text" name="full_screen[template2][bottom_line]" id="jform_full_screen2_bottom_line" value="<?php echo 'We never spam your inbox'; ?>" />
 			</div>
 		</div>
 	</div> 

@@ -56,6 +56,12 @@
 			<language tag="it-IT">it-IT/it-IT.com_jdpopx.sys.ini</language>
         </languages>
     </administration>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.com_jdpopx.ini</language>
+		<language tag="en-GB">en-GB/en-GB.com_jdpopx.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.com_jdpopx.ini</language>
+		<language tag="it-IT">it-IT/it-IT.com_jdpopx.sys.ini</language>
+	</languages>
     <config>
         <fields name="params">
             <fieldset name="component">

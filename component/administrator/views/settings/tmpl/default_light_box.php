@@ -71,7 +71,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template1][heading]" value="<?php echo (isset($this->light_box->heading)) ? $this->light_box->heading : JText::_('COM_JDPOPX_LIGHT_BOX_SUBSCRIBE'); ?>" id="jform_light_box_heading" />
+				<input type="text" name="light_box[template1][heading]" value="<?php echo (isset($this->light_box->heading)) ? $this->light_box->heading : 'Subscribe'; ?>" id="jform_light_box_heading" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -81,7 +81,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template1][description]" value="<?php echo (isset($this->light_box->description)) ? $this->light_box->description : JText::_('COM_JDPOPX_LIGHT_BOX_DESC'); ?>" id="jform_light_box_description" />
+				<input type="text" name="light_box[template1][description]" value="<?php echo (isset($this->light_box->description)) ? $this->light_box->description : 'Free Guide Now'; ?>" id="jform_light_box_description" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -91,7 +91,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template1][button_text]" value="<?php echo (isset($this->light_box->button_text)) ? $this->light_box->button_text :JText::_('COM_JDPOPX_LIGHT_BOX_BUTTON_TEXT'); ?>" id="jform_light_box_button_text" />
+				<input type="text" name="light_box[template1][button_text]" value="<?php echo (isset($this->light_box->button_text)) ? $this->light_box->button_text : 'Subscribe Now'; ?>" id="jform_light_box_button_text" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -101,7 +101,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template1][button_color]" class="minicolors" value="<?php echo (isset($this->light_box->button_color)) ? $this->light_box->button_color : JText::_('COM_JDPOPX_LIGHT_BOX_BUTTON_COLOR'); ?>" id="jform_light_box_button_color" />
+				<input type="text" name="light_box[template1][button_color]" class="minicolors" value="<?php echo (isset($this->light_box->button_color)) ? $this->light_box->button_color : '#e74b3b'; ?>" id="jform_light_box_button_color" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -111,7 +111,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template1][bottom_line]" value="<?php echo (isset($this->light_box->bottom_line)) ? $this->light_box->bottom_line : JText::_('COM_JDPOPX_FORM_CHANGE_BOTTON_LINE_VALUE'); ?>" id="jform_light_box_bottom_line" />
+				<input type="text" name="light_box[template1][bottom_line]" value="<?php echo (isset($this->light_box->bottom_line)) ? $this->light_box->bottom_line : 'We never spam your inbox'; ?>" id="jform_light_box_bottom_line" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -121,7 +121,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template1][border_color]" value="<?php echo (isset($this->light_box->border_color)) ? $this->light_box->border_color : JText::_('COM_JDPOPX_FORM_CHANGE_BORDER_COLOR_VAL'); ?>" id="jform_light_box_border_color" class="minicolors" />
+				<input type="text" name="light_box[template1][border_color]" value="<?php echo (isset($this->light_box->border_color)) ? $this->light_box->border_color : '#e74b3b'; ?>" id="jform_light_box_border_color" class="minicolors" />
 			</div>
 		</div>
 		
@@ -185,7 +185,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template2][heading]"  value="<?php echo (isset($this->light_box->heading2)) ? $this->light_box->heading2 : JText::_('COM_JDPOPX_LIGHT2_BOX_SUBSCRIBE'); ?>" id="jform_light_box2_heading" />
+				<input type="text" name="light_box[template2][heading]"  value="<?php echo (isset($this->light_box->heading2)) ? $this->light_box->heading2 : 'Subscribe'; ?>" id="jform_light_box2_heading" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -195,7 +195,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template2][description]" value="<?php echo (isset($this->light_box->description2)) ? $this->light_box->description2 : JText::_('COM_JDPOPX_LIGHT2_BOX_DESC'); ?>" id="jform_light_box2_description" />
+				<input type="text" name="light_box[template2][description]" value="<?php echo (isset($this->light_box->description2)) ? $this->light_box->description2 : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'; ?>" id="jform_light_box2_description" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -205,7 +205,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template2][button_text]" value="<?php echo (isset($this->light_box->button_text2)) ? $this->light_box->button_text2 : JText::_('COM_JDPOPX_LIGHT2_BOX_BUTTON_TEXT'); ?>" id="jform_light_box2_button_text" />
+				<input type="text" name="light_box[template2][button_text]" value="<?php echo (isset($this->light_box->button_text2)) ? $this->light_box->button_text2 : 'Subscribe Now'; ?>" id="jform_light_box2_button_text" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -215,7 +215,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template2][button_color]" value="<?php echo (isset($this->light_box->button_color2)) ? $this->light_box->button_color2 : JText::_('COM_JDPOPX_LIGHT2_BOX_BUTTON_COLOR'); ?>" class="minicolors" id="jform_light_box2_button_color" />
+				<input type="text" name="light_box[template2][button_color]" value="<?php echo (isset($this->light_box->button_color2)) ? $this->light_box->button_color2 : '#103b4b'; ?>" class="minicolors" id="jform_light_box2_button_color" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -225,7 +225,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="light_box[template2][bottom_line]" value="<?php echo (isset($this->light_box->bottom_line2)) ? $this->light_box->bottom_line2 : JText::_('COM_JDPOPX_LIGHT_BOX2_BOTTOM_LINE'); ?>" id="jform_light_box2_bottom_line" />
+				<input type="text" name="light_box[template2][bottom_line]" value="<?php echo (isset($this->light_box->bottom_line2)) ? $this->light_box->bottom_line2 : 'We never spam your inbox'; ?>" id="jform_light_box2_bottom_line" />
 			</div>
 		</div> 
 	</div>

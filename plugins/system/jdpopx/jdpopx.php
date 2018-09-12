@@ -59,6 +59,9 @@ class PlgSystemJdpopx extends JPlugin
 		{
 			return true;
 		}
+		
+		$lang = JFactory::getLanguage();
+		$lang->load("com_jdpopx");
 
 		$buffer = JFactory::getApplication()->getBody();
 		$popx = new JdpopxControllerSettings;	

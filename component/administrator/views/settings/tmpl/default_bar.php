@@ -95,7 +95,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="bar[template1][heading]" id="jform_bar_heading" value="<?php echo (isset($this->bar->heading)) ? $this->bar->heading : JText::_('COM_JDPOPX_BAR_FORM_CHANGE_HEADING'); ?>" />
+				<input type="text" name="bar[template1][heading]" id="jform_bar_heading" value="<?php echo (isset($this->bar->heading)) ? $this->bar->heading : 'Sign up to the our Newsletter'; ?>" />
 			</div>
 		</div> 
 		<div class="control-group">
@@ -105,7 +105,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="bar[template1][button_text]" id="jform_bar_button_text" value="<?php echo (isset($this->bar->button_text)) ? $this->bar->button_text : JText::_('COM_JDPOPX_BAR_FORM_CHANGE_BUTTON_TEXT'); ?>" />
+				<input type="text" name="bar[template1][button_text]" id="jform_bar_button_text" value="<?php echo (isset($this->bar->button_text)) ? $this->bar->button_text : 'Subscribe Now'; ?>" />
 			</div>
 		</div>	
 		<div class="control-group">
@@ -192,7 +192,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="bar[template2][heading]" value="<?php echo (isset($this->bar->heading2)) ? $this->bar->heading2 : JText::_('COM_JDPOPX_BAR2_FORM_CHANGE_HEADING'); ?>" id="jform_bar2_heading" />
+				<input type="text" name="bar[template2][heading]" value="<?php echo (isset($this->bar->heading2)) ? $this->bar->heading2 : 'Download free Guide now'; ?>" id="jform_bar2_heading" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -202,7 +202,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="bar[template2][description]" id="jform_bar2_description" value="<?php echo (isset($this->bar->description2)) ? $this->bar->description2 : JText::_('COM_JDPOPX_BAR2_FORM_CHANGE_DESC'); ?>" />
+				<input type="text" name="bar[template2][description]" id="jform_bar2_description" value="<?php echo (isset($this->bar->description2)) ? $this->bar->description2 : 'How i earn $1000 in 1 day ?'; ?>" />
 			</div>
 		</div>
 		<div class="control-group">
@@ -212,7 +212,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="bar[template2][button_text]" id="jform_bar2_button_text" value="<?php echo (isset($this->bar->button_text2)) ? $this->bar->button_text2 : JText::_('COM_JDPOPX_BAR2_FORM_CHANGE_BUTTON_TEXT'); ?>" />
+				<input type="text" name="bar[template2][button_text]" id="jform_bar2_button_text" value="<?php echo (isset($this->bar->button_text2)) ? $this->bar->button_text2 : 'Subscribe Now'; ?>" />
 			</div>
 		</div>		 
 		<div class="control-group">

@@ -79,16 +79,15 @@ if(isset($displayData->effect)){
                         <div class="popx_response"></div>
                         <form action="" method="post" name="popx_subscribe_form" id="popx_subscribe_form">
                             <div class="jd-popx-row-group">
-
                                 <?php if(isset($data->input_fields) && in_array('name',$data->input_fields)){ ?>
                                 <fieldset class="jd-popx-col-tab-wrap-4 jd-popx-col-mobile-wrap-12 jd-popx-field-group">
-                                    <input type="text" required="true" placeholder="Name" name="popx_name" id="popx_name">
+                                    <input type="text" required="true" placeholder="<?php echo JText::_('COM_JDPOPX_NAME_INPUT_LABEL'); ?>" name="popx_name" id="popx_name">
                                 </fieldset>
                                 <?php } ?>
 
                                 <!--End Name fieldset-->
                                 <fieldset class="jd-popx-col-tab-wrap-4 jd-popx-col-mobile-wrap-12 jd-popx-field-group">
-                                    <input type="email" placeholder="Email" required="true" id="popx_email" name="popx_email">
+                                    <input type="email" placeholder="<?php echo JText::_('COM_JDPOPX_EMAIL_INPUT_LABEL'); ?>" required="true" id="popx_email" name="popx_email">
                                 </fieldset>
 
                                 <!--End Email fieldset-->
