@@ -98,3 +98,7 @@ ul.option_type_sub li img {
    border: 2px solid white;
    padding: 5px;
 }
+
+.fade:not(.show) {
+   opacity: 1 !important;
+} 

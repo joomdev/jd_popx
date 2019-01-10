@@ -67,9 +67,9 @@ class JdpopxModelSettings extends JModelList
 	{
 		$db = JFactory::getDBO();
 		$query = $db->getQuery(true);
-		$query->select('listid,name');
-		$query->from($db->quoteName('#__acymailing_list'));
-		$query->where('published = 1');
+		$query->select('id,name');
+		$query->from($db->quoteName('#__acym_list'));
+		$query->where('active = 1');
 		$db->setQuery($query);
 		$results = $db->loadObjectList();
 		return $results;

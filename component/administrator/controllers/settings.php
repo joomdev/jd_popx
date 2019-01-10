@@ -16,7 +16,7 @@ jimport('joomla.application.component.controllerform');
  * @since  1.6
  */
  
-require_once(rtrim(JPATH_ADMINISTRATOR,DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'components'.DIRECTORY_SEPARATOR.'com_acymailing'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'helper.php');
+require_once(rtrim(JPATH_ADMINISTRATOR,DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'components'.DIRECTORY_SEPARATOR.'com_acym'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'helper.php');
 class JdpopxControllerSettings extends JControllerForm
 {
 	/**
@@ -154,9 +154,9 @@ class JdpopxControllerSettings extends JControllerForm
 		if(isset($data['email']) && !empty($data['email'])){
 			if(!JdpopxControllerSettings::isSubscribe($data['email'])){
 				$emailOrUserID 	 = $data['email'];
-				$subscriberClass = acymailing_get('class.subscriber');
+				$subscriberClass = acym_get('class.user');
 				
-				$subid 			 = $subscriberClass->subid($emailOrUserID);
+				$subid 			 = $subscriberClass->getOneByEmail($emailOrUserID);
 				
 				if(!$subid){
 					$myUser = new stdClass();
@@ -165,10 +165,16 @@ class JdpopxControllerSettings extends JControllerForm
 					$subid = $subscriberClass->save($myUser);
 				}
 				
-				$listId			   = JdpopxControllerSettings::getDefaultList();	
-				$newList['status'] = 1;
-				$newSubscription[$listId] = $newList;
-				$is_subscribe = $subscriberClass->saveSubscription($subid,$newSubscription);
+				$listId	 = JdpopxControllerSettings::getDefaultList();
+
+				$subscription = new stdClass();
+				$subscription->user_id = $subid;
+				$subscription->list_id = $listId;
+				$subscription->status = 1;
+				$subscription->subscription_date = date("Y-m-d H:i:s", time());
+
+				$is_subscribe = JFactory::getDbo()->insertObject('#__acym_user_has_list', $subscription);
+
 				if($is_subscribe){
 					$response['message'] =  JText::_('COM_JDPOPX_SUBSCRIPTION_OK');
 					$response['success'] = true;
@@ -215,14 +221,15 @@ class JdpopxControllerSettings extends JControllerForm
 	
 	public static function isSubscribe($email)
 	{
+		
 		$db = JFactory::getDBO();
 		$query = $db->getQuery(true);
-		$query->select('subid');
-		$query->from($db->quoteName('#__acymailing_subscriber'));
+		$query->select('id');
+		$query->from($db->quoteName('#__acym_user'));
 		$query->where("email = '".$email."'");
 		$db->setQuery($query);
 		$results = $db->loadObject();
-		return (isset($results->subid)) ? $results->subid : false;
+		return (isset($results->id)) ? $results->id : false;
 	} 
 
 }

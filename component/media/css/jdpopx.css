@@ -3779,3 +3779,7 @@ label.error {
     -webkit-animation: spinner .6s linear infinite;
     animation: spinner .6s linear infinite;
 }
+
+.fade:not(.show){
+    opacity: 1 !important;
+}
