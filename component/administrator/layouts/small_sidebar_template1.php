@@ -6,6 +6,14 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
 */
 defined('_JEXEC') or die;
+?>
+<style>
+.disabledd{
+    cursor: not-allowed !important;
+    opacity:0.8 !important;
+} 
+</style> 
+<?php
 $option_type 	= (isset($displayData->option_type) && !empty($displayData->option_type)) ? $displayData->option_type : 'light_box'; 
 $data = (isset($displayData->$option_type) && !empty($displayData->$option_type)) ? json_decode($displayData->$option_type) : array();
 
@@ -75,6 +83,21 @@ $flyinclas = (isset($data->position) && !empty($data->position)) ? $data->positi
                                     <fieldset class="jd-popx-field-group">
                                         <input type="email" required="true" id="popx_email" placeholder="<?php echo JText::_('COM_JDPOPX_EMAIL_INPUT_LABEL'); ?>" name="popx_email">
                                     </fieldset>
+
+                                <!-- tnc -->
+                                <fieldset class="jd-popx-field-group">
+                                    <?php if(!empty($data->tnc_text)){ ?>
+                                    <input type="checkbox" id="term_conditions"  required="true" placeholder="<?php echo JText::_('COM_JDPOPX_TNC_LABEL'); ?>" name="popx_tnc">
+                                    <span> <?php 
+                                    echo $data->tnc_text; 
+                                    } ?>  
+                                    </span>
+
+                                    </fieldset>
+                                <!-- tnc -->
+
+
+
                                     <fieldset class="jd-popx-field-group jd-popx-btn-group">
                                         <input type="hidden" name="ispopx" value="1">
                                         <button type="submit" id="popx_submit" class="popx-has-spinner"><?php echo (isset($data->button_text) && !empty($data->button_text)) ? $data->button_text : JText::_('COM_JDPOPX_SUBMIT'); ?></button>
@@ -100,3 +123,15 @@ $flyinclas = (isset($data->position) && !empty($data->position)) ? $data->positi
         </div>
     </div>
 </div>
+<script> 
+jQuery(document).ready(function(){    
+    jQuery("#term_conditions").click(function(){    
+            if(jQuery(this).is(":checked")){
+            jQuery("#popx_submit").removeClass("disabledd");
+            }
+            else if(jQuery(this).is(":not(:checked)")){
+                jQuery("#popx_submit").addClass("disabledd");
+            }
+        });
+    });
+</script>
