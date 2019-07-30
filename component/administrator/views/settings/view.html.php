@@ -63,6 +63,7 @@ class JdpopxViewSettings extends JViewLegacy
 				$this->$option_type->button_text 	= (isset($templdata['button_text'])) ? $templdata['button_text'] : '';
 				$this->$option_type->button_color 	= (isset($templdata['button_color'])) ? $templdata['button_color'] : '';
 				$this->$option_type->bottom_line 	= (isset($templdata['bottom_line'])) ? $templdata['bottom_line'] : '';
+				$this->$option_type->tnc_text 		= (isset($templdata['tnc_text'])) ? $templdata['tnc_text'] : '';
 				$this->$option_type->border_color 	= (isset($templdata['border_color'])) ? $templdata['border_color'] : '';
 				$this->$option_type->position 		= (isset($templdata['position'])) ? $templdata['position'] : '';
 				$this->$option_type->align 			= (isset($templdata['align'])) ? $templdata['align'] : '';
@@ -78,6 +79,7 @@ class JdpopxViewSettings extends JViewLegacy
 				$this->$option_type->button_text 	= (isset($optionData->button_text)) ? $optionData->button_text : '';
 				$this->$option_type->button_color 	= (isset($optionData->button_color)) ? $optionData->button_color : '';
 				$this->$option_type->bottom_line 	= (isset($optionData->bottom_line)) ? $optionData->bottom_line : '';
+				$this->$option_type->tnc_text 	= (isset($optionData->tnc_text)) ? $optionData->tnc_text : '';
 				$this->$option_type->border_color 	= (isset($optionData->border_color)) ? $optionData->border_color : '';
 				$this->$option_type->position 		= (isset($optionData->position)) ? $optionData->position : '';
 				$this->$option_type->align 			= (isset($optionData->align)) ? $optionData->align : '';
@@ -98,6 +100,7 @@ class JdpopxViewSettings extends JViewLegacy
 				$this->$option_type->button_text2 	= (isset($templdata['button_text'])) ? $templdata['button_text'] : '';
 				$this->$option_type->button_color2 	= (isset($templdata['button_color'])) ? $templdata['button_color'] : '';
 				$this->$option_type->bottom_line2 	= (isset($templdata['bottom_line'])) ? $templdata['bottom_line'] : '';
+				$this->$option_type->tnc_text2 		= (isset($templdata['tnc_text'])) ? $templdata['tnc_text'] : '';
 				$this->$option_type->border_color2 	= (isset($templdata['border_color'])) ? $templdata['border_color'] : '';
 				$this->$option_type->position2		= (isset($templdata['position'])) ? $templdata['position'] : '';
 				$this->$option_type->align2 			= (isset($templdata['align'])) ? $templdata['align'] : '';
@@ -113,6 +116,7 @@ class JdpopxViewSettings extends JViewLegacy
 				$this->$option_type->button_text2 	= (isset($optionData->button_text)) ? $optionData->button_text : '';
 				$this->$option_type->button_color2 	= (isset($optionData->button_color)) ? $optionData->button_color : '';
 				$this->$option_type->bottom_line2 	= (isset($optionData->bottom_line)) ? $optionData->bottom_line : '';
+				$this->$option_type->tnc_text2 		= (isset($optionData->tnc_text)) ? $optionData->tnc_text : '';		
 				$this->$option_type->border_color2 	= (isset($optionData->border_color)) ? $optionData->border_color : '';
 				$this->$option_type->position2 		= (isset($optionData->position)) ? $optionData->position : '';
 				$this->$option_type->align2 		= (isset($optionData->align)) ? $optionData->align : '';
