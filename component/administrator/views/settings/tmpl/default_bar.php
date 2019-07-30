@@ -98,6 +98,18 @@ defined('_JEXEC') or die;
 				<input type="text" name="bar[template1][heading]" id="jform_bar_heading" value="<?php echo (isset($this->bar->heading)) ? $this->bar->heading : 'Sign up to the our Newsletter'; ?>" />
 			</div>
 		</div> 
+			<!--- TNC1 --->
+			<div class="control-group">
+			<div class="control-label">
+				<label id="tnc-lbl" for="tnc" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BOTTON_LINE_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BOTTON_LINE'); ?>">
+					<?php echo JText::_('TNC Text'); ?> 
+				</label>
+			</div>	
+			<div class="controls">
+				<input type="text" name="bar[template1][tnc_text]" id="jform_small_sidebar_tnc_text2" value="<?php echo (isset($this->bar->tnc_text)) ? $this->bar->tnc_text : 'TNC Text'; ?>" />
+			</div>
+		</div>
+	<!--- TNC1 --->
 		<div class="control-group">
 			<div class="control-label">
 				<label id="jform_bar_button_text-lbl" for="jform_bar_button_text" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT'); ?>">
@@ -118,6 +130,7 @@ defined('_JEXEC') or die;
 				<input type="text" name="bar[template1][button_color]" class="minicolors" id="jform_bar_button_color" value="<?php echo (isset($this->bar->button_color)) ? $this->bar->button_color : JText::_('COM_JDPOPX_BAR_FORM_CHANGE_BUTTON_COLOR'); ?>" />
 			</div>
 		</div> 
+
 	</div>
 	<div class="full_sid_tmpl subtmpl" id="bar2" <?php echo (isset($this->bar->tmpl) && $this->bar->tmpl == 2) ? 'style="display:block"' : ''; ?>>
 		<div class="control-group">
@@ -205,6 +218,19 @@ defined('_JEXEC') or die;
 				<input type="text" name="bar[template2][description]" id="jform_bar2_description" value="<?php echo (isset($this->bar->description2)) ? $this->bar->description2 : 'How i earn $1000 in 1 day ?'; ?>" />
 			</div>
 		</div>
+			<!--- TNC2 --->
+			<div class="control-group">
+						<div class="control-label">
+							<label id="tnc-lbl" for="tnc" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BOTTON_LINE_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BOTTON_LINE'); ?>">
+								<?php echo JText::_('TNC Text'); ?> 
+							</label>
+						</div>	
+						<div class="controls">
+							<input type="text" name="bar[template2][tnc_text]" id="jform_small_sidebar_tnc_text2" value="<?php echo (isset($this->bar->tnc_text2)) ? $this->bar->tnc_text2 : 'TNC Text'; ?>" />
+						</div>
+					</div>
+				<!--- TNC2 --->
+
 		<div class="control-group">
 			<div class="control-label">
 				<label id="jform_bar2_button_text-lbl" for="jform_bar2_button_text" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT'); ?>">
@@ -225,6 +251,7 @@ defined('_JEXEC') or die;
 				<input type="text" name="bar[template2][button_color]" class="minicolors" value="<?php echo (isset($this->bar->button_color2)) ? $this->bar->button_color2 : JText::_('COM_JDPOPX_BAR2_FORM_CHANGE_BUTTON_COLOR'); ?>" />
 			</div>
 		</div> 
+
 	</div> 
 	
 </div>

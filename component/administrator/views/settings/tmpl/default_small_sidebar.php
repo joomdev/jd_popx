@@ -97,6 +97,20 @@ defined('_JEXEC') or die;
 				<input type="text" name="small_sidebar[template1][heading]" id="jform_small_sidebar_heading" value="<?php echo (isset($this->small_sidebar->heading)) ? $this->small_sidebar->heading : 'Subscribe'; ?>" />
 			</div>
 		</div>	 	
+
+		<!-- tnc text 1  -->
+		<div class="control-group">
+				<div class="control-label">
+					<label id="tnc-lbl" for="tnc" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_TNC_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_TNC_TEXT'); ?>">
+						<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_TNC_TEXT'); ?> 
+					</label>
+				</div>				
+				<div class="controls">
+					<input type="text" name="small_sidebar[template1][tnc_text]" 	id="tnc_text" value="<?php echo (isset($this->small_sidebar->tnc_text)) ? $this->small_sidebar->tnc_text : 'TNC Text'; ?>" />
+				</div>
+			</div>
+		<!-- tnc text 1  -->
+
 		<div class="control-group">
 			<div class="control-label">
 				<label id="jform_small_sidebar_button_text-lbl" for="jform_small_sidebar_button_text" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT'); ?>">
@@ -126,7 +140,8 @@ defined('_JEXEC') or die;
 			<div class="controls">
 				<input type="text" name="small_sidebar[template1][bottom_line]" id="jform_small_sidebar_bottom_line" value="<?php echo (isset($this->small_sidebar->bottom_line)) ? $this->small_sidebar->bottom_line : 'We never spam your inbox'; ?>" />
 			</div>
-		</div>		
+		</div>	
+	 
 	</div>
 	<div class="full_sid_tmpl subtmpl" id="small_sidebar2" <?php echo (isset($this->small_sidebar->tmpl) && $this->small_sidebar->tmpl == 2) ? 'style="display:block"' : ''; ?>>
 		<div class="control-group">
@@ -216,6 +231,20 @@ defined('_JEXEC') or die;
 				<input type="text" name="small_sidebar[template2][description]" value="<?php echo (isset($this->small_sidebar->description2)) ? $this->small_sidebar->description2 : 'Free Guide Now'; ?>" id="jform_small_sidebar2_description" />
 			</div>
 		</div>
+
+		<!-- TNC Text 2 -->
+		<div class="control-group">
+				<div class="control-label">
+					<label id="tnc-lbl" for="tnc" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BOTTON_LINE_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BOTTON_LINE'); ?>">
+						<?php echo JText::_('TNC Text'); ?> 
+					</label>
+				</div>
+				<div class="controls">
+					<input type="text" name="small_sidebar[template2][tnc_text]" id="jform_small_sidebar_tnc_text2" value="<?php echo (isset($this->small_sidebar->tnc_text2)) ? $this->small_sidebar->tnc_text2 : 'TNC Text'; ?>" />
+				</div>
+			</div>
+		<!-- TNC Text 2 -->
+
 		<div class="control-group">
 			<div class="control-label">
 				<label id="jform_small_sidebar2_button_text-lbl" for="jform_small_sidebar2_button_text" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT'); ?>">
@@ -246,5 +275,6 @@ defined('_JEXEC') or die;
 				<input type="text" name="small_sidebar[template2][bottom_line]" value="<?php echo (isset($this->small_sidebar->bottom_line2)) ? $this->small_sidebar->bottom_line2 : 'We never spam your inbox'; ?>" />
 			</div>
 		</div>
+		
 	</div> 
 </div>

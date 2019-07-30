@@ -84,6 +84,25 @@ defined('_JEXEC') or die;
 			<input type="text" name="full_screen[template1][description]" value="<?php echo (isset($this->full_screen->description)) ? $this->full_screen->description : 'Get 10 % Discount Immediately'; ?>" />
 			</div>
 		</div>	
+
+
+
+	
+			<!-- tnc text 1  -->
+			<div class="control-group">
+				<div class="control-label">
+					<label id="tnc-lbl" for="tnc" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_TNC_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_TNC_TEXT'); ?>">
+						<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_TNC_TEXT'); ?> 
+					</label>
+				</div>
+				
+				<div class="controls">
+					<input type="text" name="full_screen[template1][tnc_text]" 	id="tnc_text" value="<?php echo (isset($this->full_screen->tnc_text)) ? $this->full_screen->tnc_text : 'TNC Text'; ?>" />
+				</div>
+			</div>
+		<!--tnc text 1  -->
+
+
 		<div class="control-group">
 			<div class="control-label">
 				<label id="jform_full_screen_button_text-lbl" for="jform_full_screen_button_text" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT'); ?>">
@@ -113,7 +132,7 @@ defined('_JEXEC') or die;
 			<div class="controls">
 				<input type="text" name="full_screen[template1][bottom_line]" id="jform_full_screen_bottom_line" value="<?php echo (isset($this->full_screen->bottom_line)) ? $this->full_screen->bottom_line : 'We never spam your inbox'; ?>" />
 			</div>
-		</div>		
+		</div>	
 	</div>
 	<div class="full_sid_tmpl subtmpl" id="full_screen2" <?php echo (isset($this->full_screen->tmpl) && $this->full_screen->tmpl == 2) ? 'style="display:block"' : ''; ?>>
 		<div class="control-group">
@@ -175,6 +194,19 @@ defined('_JEXEC') or die;
 				<input type="text" name="full_screen[template2][description]" id="jform_full_screen2_description" value="<?php echo (isset($this->full_screen->description2)) ? $this->full_screen->description2 : 'Various versions have evolved over the years, sometimes by accident, sometimes on purpose' ?>" />
 			</div>
 		</div>
+		<!-- TNC Text 2 -->
+			<div class="control-group">
+				<div class="control-label">
+					<label id="tnc-lbl" for="tnc" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_TNC_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_TNC_TEXT'); ?>">
+						<?php echo JText::_('TNC Text'); ?> 
+					</label>
+				</div>	
+				
+				<div class="controls">
+					<input type="text" name="full_screen[template2][tnc_text]" 	id="jform_full_screen2_tnc_text2" value="<?php echo (isset($this->full_screen->tnc_text2)) ? $this->full_screen->tnc_text2 : 'TNC Text'; ?>" />
+				</div>
+			</div>
+		<!-- TNC Text 2 -->
 		<div class="control-group">
 			<div class="control-label">
 				<label id="jform_full_screen2_button_text-lbl" for="jform_full_screen2_button_text" class="hasPopover" data-content="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT_DESC'); ?>" data-original-title="<?php echo JText::_('COM_JDPOPX_FORM_CHANGE_BUTTON_TEXT'); ?>">
@@ -202,7 +234,7 @@ defined('_JEXEC') or die;
 				</label>
 			</div>
 			<div class="controls">
-				<input type="text" name="full_screen[template2][bottom_line]" id="jform_full_screen2_bottom_line" value="<?php echo 'We never spam your inbox'; ?>" />
+				<input type="text" name="full_screen[template2][bottom_line]" id="jform_full_screen2_bottom_line" value="<?php echo (isset($this->full_screen->bottom_line2)) ? $this->full_screen->bottom_line2 : 'Bottom Line Goes here'; ?>" />
 			</div>
 		</div>
 	</div> 
