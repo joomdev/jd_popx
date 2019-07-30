@@ -82,7 +82,17 @@ if(isset($displayData->effect)){
                                             <fieldset class="jd-popx-field-group">
                                                 <input type="email" required="true" id="popx_email" placeholder="<?php echo JText::_('COM_JDPOPX_EMAIL_INPUT_LABEL'); ?>" name="popx_email">
                                             </fieldset>
+                                <!-- tnc -->
+                                    <fieldset class="jd-popx-field-group">
+                                            <?php if(!empty($data->tnc_text)){ ?>
+                                            <input type="checkbox" id="term_conditions"  required="true" placeholder="<?php echo JText::_('COM_JDPOPX_TNC_LABEL'); ?>" name="popx_tnc">
+                                            <span> <?php 
+                                            echo $data->tnc_text; 
+                                            } ?>  
+                                    </span>
 
+                                    </fieldset>
+                                <!-- tnc -->
                                             <fieldset class="jd-popx-field-group jd-popx-btn-group">
                                                 <input type="hidden" name="ispopx" value="1">
                                                 <button type="submit" id="popx_submit" class="popx-has-spinner"><?php echo (isset($data->button_text) && !empty($data->button_text)) ? $data->button_text : JText::_('COM_JDPOPX_SUBMIT'); ?></button>
